@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
+import 'Screens/AddSignUpDetails.dart';
 import 'Screens/guruListPage.dart';
 import 'Screens/loginPage.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoginPage()
+      home: AddSignUpDetails(username: "root",)
     );
   }
 }

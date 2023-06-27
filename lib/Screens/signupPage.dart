@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../Logic/Auth.dart';
 import '../components/my_button.dart';
 import '../components/my_textfield.dart';
+import 'AddSignUpDetails.dart';
 import 'guruListPage.dart';
 import 'loginPage.dart';
 
@@ -90,8 +91,9 @@ class SignupPage extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (_) => LoginPage())
-                          );
+                                  builder: (_) => AddSignUpDetails(
+                                        username: usernameController.text,
+                                      )));
                           print("Account Created Sucessfull");
                         } else {
                           print("signup Failed");

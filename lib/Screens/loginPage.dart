@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Welcome Back!',
+                'GURU Login!',
                 style: TextStyle(
                   color: Colors.grey[700],
                   fontSize: 16,
@@ -64,7 +64,7 @@ class LoginPage extends StatelessWidget {
                         );
                       },
                       child: Text(
-                        'Sign Up',
+                        'Cancel',
                         style: TextStyle(color: Colors.grey[600]),
                       ),
                     ),
