@@ -6,14 +6,14 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import '../components/guruListTile.dart';
 
-class FinanceScreen extends StatefulWidget {
+class UserScreen extends StatefulWidget {
   @override
-  State<FinanceScreen> createState() => _FinanceScreenState();
+  State<UserScreen> createState() => _UserScreenState();
 }
 
-class _FinanceScreenState extends State<FinanceScreen> {
+class _UserScreenState extends State<UserScreen> {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-
+  final FirebaseAuth _auth = FirebaseAuth.instance;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class _FinanceScreenState extends State<FinanceScreen> {
                 height: size.height / 1.25,
                 width: size.width,
                 child: StreamBuilder<QuerySnapshot>(
-                  stream: _firestore.collection('Gurus').snapshots(),
+                  stream: _firestore.collection('problemList').snapshots(),
                   builder: (BuildContext context,
                       AsyncSnapshot<QuerySnapshot> snapshot) {
                     List<Widget> guruWidgets = [];

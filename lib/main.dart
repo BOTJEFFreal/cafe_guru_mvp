@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 import 'Screens/AddSignUpDetails.dart';
-import 'Screens/guruListPage.dart';
+import 'Screens/UsersListPage.dart';
 import 'Screens/loginPage.dart';
 
 

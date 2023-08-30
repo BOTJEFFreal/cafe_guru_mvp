@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../Logic/Auth.dart';
 import '../components/my_button.dart';
 import '../components/my_textfield.dart';
-import 'guruListPage.dart';
+import 'UsersListPage.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
@@ -84,7 +84,7 @@ class LoginPage extends StatelessWidget {
                       print("Login Sucessful");
 
                       Navigator.push(
-                          context, MaterialPageRoute(builder: (_) => FinanceScreen()));
+                          context, MaterialPageRoute(builder: (_) => UserScreen()));
                     } else {
                       print("Login Failed");
 

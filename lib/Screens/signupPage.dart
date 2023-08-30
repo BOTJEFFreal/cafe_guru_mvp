@@ -4,7 +4,7 @@ import '../Logic/Auth.dart';
 import '../components/my_button.dart';
 import '../components/my_textfield.dart';
 import 'AddSignUpDetails.dart';
-import 'guruListPage.dart';
+import 'UsersListPage.dart';
 import 'loginPage.dart';
 
 class SignupPage extends StatelessWidget {
